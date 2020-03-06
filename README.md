@@ -53,7 +53,7 @@ See also the list of [contributors](https://github.com/CTF-Website-Template-2020
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/ashawe/CTF-Website-Template-2020/blob/master/LICENSE.md) file for details
+This project is licensed under the GNU GPL V2 License - see the [LICENSE.md](https://github.com/ashawe/CTF-Website-Template-2020/blob/master/LICENSE.md) file for details
 
 ## Acknowledgments
 🎉 Hats off to following people
