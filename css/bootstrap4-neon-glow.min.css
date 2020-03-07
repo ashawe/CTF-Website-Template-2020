@@ -11488,9 +11488,10 @@ a.text-dark:hover {
     }
 }
 
-body {
+
+/* body {
     background-image: url(../images/ng-background-dot.png)
-}
+} */
 
 .btn-shadow {
     margin-left: 8px

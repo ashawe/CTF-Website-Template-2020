@@ -13,6 +13,15 @@
     letter-spacing: 0.125em;
 }
 
+body {
+    background-image: url(../images/bg.jpg);
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: 350px;
+    background-color: #000;
+}
+
 .color_danger {
     color: #ef121b;
 }
