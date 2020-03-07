@@ -286,7 +286,7 @@ button.typewriter {
     position: absolute;
     top: 0;
     left: 0;
-    width: var(--glitch-width);
+    width: 100%;
     height: var(--glitch-height);
     overflow: hidden;
 }
@@ -304,6 +304,10 @@ button.typewriter {
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: 350px;
+}
+
+.glitch__img_login {
+    background: url(../images/bg--world.png)!important;
 }
 
 .glitch__img:nth-child(n+2) {
@@ -552,21 +556,3 @@ button.typewriter {
         clip-path: polygon(0 0, 0 0, 0 0, 0 0);
     }
 }
-
-
-/* Flash */
-
-
-/* 
-@keyframes glitch-anim-flash {
-    0%,
-    5% {
-        opacity: 0.2;
-        transform: translate3d(var(--gap-horizontal), var(--gap-vertical), 0);
-    }
-    5.5%,
-    100% {
-        opacity: 0;
-        transform: translate3d(0, 0, 0);
-    }
-} */
