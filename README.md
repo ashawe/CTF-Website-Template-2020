@@ -43,13 +43,13 @@ Feel free to update and send a pull request 😉
 
 ## Contributing
 
-Please read [CONTRIBUTING.md]() for details on our code of conduct, and the process for submitting pull requests to us.
+Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
 
 ## Authors
 
 * **Harsh Saglani** - *Initial work* - [ashawe](https://github.com/ashawe)
 
-See also the list of [contributors](https://github.com/CTF-Website-Template-2020/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/CTF-Website-Template-2020/graphs/contributors) who participated in this project.
 
 ## License
 
