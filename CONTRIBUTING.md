@@ -109,3 +109,10 @@ The aim of this repository is:
 * To provide a beautiful and cool looking CTF website
 * Make it easier for CTF organizers to host CTFs by giving them a good looking UI
 * Foster a culture of respect and gratitude in the open source community.
+
+## Please note that
+If there are multiple commits in your pull request, these commits will be squashed before merging. 
+
+Make sure, if that's the case, that your pull request has a nice description explaining what it does.
+
+It's okay to have work-in-progress pull requests. Add [WIP] in the title of your pull request if that's the case, otherwise your pull request will be considered in a state of being able to be merged as is.
