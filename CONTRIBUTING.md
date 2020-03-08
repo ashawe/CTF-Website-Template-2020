@@ -43,7 +43,7 @@ Ensure the bug was not already reported by searching on GitHub under [Issues](ht
 
 If you're unable to find an open issue addressing the problem, [open a new one](https://github.com/ashawe/CTF-Website-Template-2020/issues/new). Be sure to include a title and clear description, as much relevant information as possible, and a code sample or an executable test case demonstrating the expected behavior that is not occurring.
 
-### 3.5. Implement your fix or feature
+### 3. Implement your fix or feature
 
 *    At this point, you're ready to make your changes! Feel free to ask for help; everyone is a beginner at first 😸
 *    Write a good commit message. To write good commit messages, please follow [those recommendations](https://github.com/ashawe/CTF-Website-Template-2020/blob/master/COMMIT-GUIDLINES.md). There are important to maintain an healthy commit logs.
@@ -61,19 +61,19 @@ git push
 
 ### Make sure your 'message' follows [these](https://github.com/ashawe/CTF-Website-Template-2020/blob/master/COMMIT-GUIDLINES.md) standards.
 
-### 6. Create a pull request
+### 5. Create a pull request
 
 Use GitHub to [create a pull request](https://help.github.com/en/desktop/contributing-to-projects/creating-a-pull-request) for your branch. In your pull request description, be sure to mention your changes
 
 If everything looks good, a maintainer will approve and merge the pull request when appropriate. After the pull request is merged, your icon will be available in the next Octicons release.
 
-### 7. Wait for the code to be reviewed
+### 6. Wait for the code to be reviewed
 
 It can take several days before we can review the code you've submitted. We all have a lot of work to do and while we truly appreciate pull requests that are submitted, we can't review them instantly. We'll do our best to review them as fast as possible, but there are only 24 hours in a day and we can't sometimes be as fast as we wish we were. Moreover, there are little chances that the PR will be reviewed over the weekend.
 
 Also, keep in mind that this project is still a side project. Maintainers of this project are not paid to work on it. Everything they do, is done during their time off of their "real" job, that means at night, on the weekend and during holidays.
 
-### 8. What can I contribute to?
+### 7. What can I contribute to?
 
 Even the simplest change is appreciated. It can be a typo error, translating the application in a new language, fix a bug. No change is too small.
 
