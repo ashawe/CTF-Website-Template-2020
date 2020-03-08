@@ -39,6 +39,18 @@
     letter-spacing: 0.125em;
 }
 
+.collapsing {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    -webkit-transition-property: height, visibility;
+    transition-property: height, visibility;
+    -webkit-transition-duration: 0.25s;
+    transition-duration: 0.25s;
+    -webkit-transition-timing-function: ease;
+    transition-timing-function: ease;
+}
+
 body {
     /* background-image: url(../images/bg.png); */
     background-position: right;
@@ -46,6 +58,48 @@ body {
     background-repeat: no-repeat;
     background-position-x: 350px;
     background-color: #00040d;
+}
+
+.solved .badge {
+    background-color: #17b06b94;
+    border: 1px solid #17b06b;
+    color: white;
+}
+
+.badge {
+    border: 1px solid #87c4f2;
+}
+
+.solved {
+    background-color: #FFFFFF14;
+}
+
+.solvers {
+    color: #36a2eb;
+}
+
+.category_web {
+    border-top: 4px solid #ef121b94;
+}
+
+.category_reversing {
+    border-top: 4px solid #17b06b94;
+}
+
+.category_steg {
+    border-top: 4px solid #f9751594;
+}
+
+.category_pwning {
+    border-top: 4px solid #36a2eb94;
+}
+
+.category_misc {
+    border-top: 4px solid #ffce5694;
+}
+
+.category_crypt {
+    border-top: 4px solid #9966FF94;
 }
 
 .hackerFont {
@@ -317,6 +371,10 @@ button.typewriter {
 .glitch__img_leaderboard {
     position: fixed!important;
     background: url(../images/bg--world.png)!important;
+}
+
+.glitch__img_register {
+    position: fixed!important;
 }
 
 .glitch__img:nth-child(n+2) {

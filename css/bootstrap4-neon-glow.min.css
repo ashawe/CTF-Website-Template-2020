@@ -4261,7 +4261,7 @@ input[type=submit].btn-block {
     position: relative;
     display: block;
     min-height: 1.5rem;
-    padding-left: 1.5rem
+    padding-left: 2rem
 }
 
 .custom-control-inline {
@@ -5418,7 +5418,7 @@ input[type=submit].btn-block {
 }
 
 .card-header:first-child {
-    border-radius: calc(6px - 1px) calc(6px - 1px) 0 0
+    border-radius: calc(6px - 1px) calc(6px - 1px) calc(6px - 1px) calc(6px - 1px)
 }
 
 .card-header+.list-group .list-group-item:first-child {
