@@ -574,7 +574,6 @@ button.typewriter {
   #preloader {
     background: black;
     color: #ddd;
-    overflow: auto;
     padding: 5px;
     box-sizing: border-box;
   }
