@@ -287,7 +287,7 @@ button.typewriter {
     top: 0;
     left: 0;
     width: 100%;
-    height: var(--glitch-height);
+    height: 100%;
     overflow: hidden;
 }
 
@@ -307,6 +307,11 @@ button.typewriter {
 }
 
 .glitch__img_login {
+    background: url(../images/bg--world.png)!important;
+}
+
+.glitch__img_leaderboard {
+    position: fixed!important;
     background: url(../images/bg--world.png)!important;
 }
 
