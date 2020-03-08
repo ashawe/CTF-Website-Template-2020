@@ -19,11 +19,11 @@
 
 <body class="imgloaded">
     <div class="glitch">
-        <div class="glitch__img glitch__img_login"></div>
-        <div class="glitch__img glitch__img_login"></div>
-        <div class="glitch__img glitch__img_login"></div>
-        <div class="glitch__img glitch__img_login"></div>
-        <div class="glitch__img glitch__img_login"></div>
+        <div class="glitch__img"></div>
+        <div class="glitch__img"></div>
+        <div class="glitch__img"></div>
+        <div class="glitch__img"></div>
+        <div class="glitch__img"></div>
     </div>
     <div class="navbar-dark text-white">
         <div class="container">
@@ -40,7 +40,7 @@
                     <div class="navbar-nav ml-auto">
                         <a href="index.html" class="p-3 text-decoration-none text-light bold">Home</a>
                         <a href="about.html" class="p-3 text-decoration-none text-light bold">About</a>
-                        <a href="leaderboard.html" class="p-3 text-decoration-none text-light bold">Leaderboard</a>
+                        <a href="hackerboard.html" class="p-3 text-decoration-none text-light bold">Hackerboard</a>
                         <a href="login.html" class="p-3 text-decoration-none text-light bold">Login</a>
                         <a href="register.html" class="p-3 text-decoration-none text-white bold">Register</a>
                     </div>
@@ -50,18 +50,17 @@
         </div>
     </div>
 
-    <div class="jumbotron bg-transparent mb-0 pt-0 radius-0">
+    <div class="jumbotron bg-transparent mb-0 pb-0 pt-3 radius-0">
         <div class="container">
             <form>
                 <div class="row">
-                    <div class="col-xl-12 text-center ">
+                    <div class="col-xl-10">
                         <h1 class="display-1 bold color_white content__title">LAKSHYA CT<span class="vim-caret">F</span></h1>
                         <p class="text-grey text-spacey">
                             Join the community and be part of the future of the information security industry.
                         </p>
                         <div class="row">
-                            <div class="col-md-4"></div>
-                            <div class="col-md-4 text-center">
+                            <div class="col-md-6">
                                 <div class="form-group">
                                     <input type="text" class="form-control" id="reciept_id" placeholder="RecieptId(ex. EINC-5e5a93e4318db)">
                                     <small id="reciept_id_help" class="form-text text-muted">Don't have reciept id? Register <a target="_blank" href="http://pictinc.org/subevents_register/online/index1.php">here</a></small>
@@ -73,12 +72,16 @@
                                     <input type="password" class="form-control" id="password" placeholder="New Password">
                                     <small id="passHelp" class="form-text text-muted">Make sure nobody's behind you</small>
                                 </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="solemnly-swear">
+                                    <label class="custom-control-label" for="solemnly-swear">I solemnly swear that I am up to no good.</label>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-xl-12 text-center">
+                    <div class="col-xl-12">
                         <button class="btn btn-outline-danger btn-shadow px-3 my-2 ml-0 ml-sm-1 text-left typewriter">
                             <h4>Register</h4>
                         </button>
