@@ -623,3 +623,49 @@ button.typewriter {
         clip-path: polygon(0 0, 0 0, 0 0, 0 0);
     }
 }
+
+#preloader {
+    width: 100%;
+    height: 100%;
+  }
+  
+  #preloader {
+    background: black;
+    color: #ddd;
+    padding: 5px;
+    box-sizing: border-box;
+  }
+  
+  #preloader::-webkit-scrollbar {
+    display: none;
+  }
+  
+  span.ok,
+  span.fail,
+  span.fail:before,
+  span.ok:before {
+    margin-right: 10px;
+  }
+  
+  span.ok {
+    color: #1EC622;
+  }
+  
+  span.fail {
+    color: red;
+  }
+  
+  span.ok:before,
+  span.fail:before {
+    content: '[';
+  }
+  
+  span.ok:after,
+  span.fail:after{
+    margin-left: 10px;
+    content: ']';
+  }
+
+  #main {
+      display: none;
+  }
