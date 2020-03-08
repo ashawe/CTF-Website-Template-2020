@@ -76,6 +76,7 @@ body {
 
 .solvers {
     color: #36a2eb;
+    font-size: 0.75rem;
 }
 
 .category_web {
@@ -627,45 +628,45 @@ button.typewriter {
 #preloader {
     width: 100%;
     height: 100%;
-  }
-  
-  #preloader {
+}
+
+#preloader {
     background: black;
     color: #ddd;
     padding: 5px;
     box-sizing: border-box;
-  }
-  
-  #preloader::-webkit-scrollbar {
+}
+
+#preloader::-webkit-scrollbar {
     display: none;
-  }
-  
-  span.ok,
-  span.fail,
-  span.fail:before,
-  span.ok:before {
+}
+
+span.ok,
+span.fail,
+span.fail:before,
+span.ok:before {
     margin-right: 10px;
-  }
-  
-  span.ok {
+}
+
+span.ok {
     color: #1EC622;
-  }
-  
-  span.fail {
+}
+
+span.fail {
     color: red;
-  }
-  
-  span.ok:before,
-  span.fail:before {
+}
+
+span.ok:before,
+span.fail:before {
     content: '[';
-  }
-  
-  span.ok:after,
-  span.fail:after{
+}
+
+span.ok:after,
+span.fail:after {
     margin-left: 10px;
     content: ']';
-  }
+}
 
-  #main {
-      display: none;
-  }
+#main {
+    display: none;
+}
