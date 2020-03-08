@@ -5,11 +5,12 @@
 CTF-Website-Template-2020 is a frontend template made for a simple CTF event. You can use it for hosting your own events. It consists of the following features:
 - Home Page
 - Login Page
-- ~~Register Page~~
+- Register Page
 - Challenge / Quests Page
 - 404 Not Found Page
 - Leaderboard Page
 - About / Rules Page
+- Instructions Page
 
 ## What is this repo?
 - A front end template
@@ -49,7 +50,7 @@ Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduc
 
 * **Harsh Saglani** - *Initial work* - [ashawe](https://github.com/ashawe)
 
-See also the list of [contributors](https://github.com/CTF-Website-Template-2020/graphs/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/ashawe/CTF-Website-Template-2020/graphs/contributors) who participated in this project.
 
 ## License
 
