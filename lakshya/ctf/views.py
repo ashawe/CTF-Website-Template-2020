@@ -101,8 +101,11 @@ def first(request):
             req = request.POST
             Qid = req.get('Qid')
             flag = req.get('flag')
+            level = req.get('customRadio_p2')
             quest = Questions.objects.get(Qid=int(Qid))
             quest.Qid = Qid
+            quest.level = level
+            quest.save()
             print("in views")
             print(str(request.user))
             print(request.user.username)

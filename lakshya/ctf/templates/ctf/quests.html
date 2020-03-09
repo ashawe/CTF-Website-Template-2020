@@ -38,8 +38,8 @@
                             <a href="/" class="p-3 text-decoration-none text-white bold">Home</a>
                             <a href="/about" class="p-3 text-decoration-none text-light bold">About</a>
                             <a href="/leaderboard" class="p-3 text-decoration-none text-light bold">Hackerboard</a>
-                            <a href="/login" class="p-3 text-decoration-none text-light bold">Login</a>
-                            <a href="/register" class="p-3 text-decoration-none text-light bold">Register</a>
+                            <a href="/logout" class="p-3 text-decoration-none text-light bold">Logout</a>
+
                     </div>
                 </div>
             </nav>
@@ -57,54 +57,57 @@
                     </p>
                 </div>
             </div>
+            {% for question in questions %}
             <div class="row hackerFont">
                 <div class="col-md-4 mb-3">
                     <div class="card category_web">
                         <div class="card-header solved" data-target="#problem_id_1" data-toggle="collapse" aria-expanded="false" aria-controls="problem_id_1">
-                            Bombs Landed <span class="badge">solved</span> <span class="badge">80 points</span>
+                           {{ question.Qtitle }} <span class="badge">solved</span> <span class="badge">80 points</span>
                         </div>
                         <div id="problem_id_1" class="collapse card-body">
                             <blockquote class="card-blockquote">
                                 <div style="display: flex;">
-                                    <h6 class="solvers">Solvers: 76 &nbsp;<span class="color_danger">Difficulty:</span></h6>
+                                    <h6 class="solvers">Solvers:{{ question.solved }} &nbsp;<span class="color_danger">Difficulty:</span></h6>
                                     <div class="pl-2"><canvas style="width:80px;height:15px" id="problem_id_1_chart"></canvas></div>
                                 </div>
-                                <p> Can you find the password? Enter the password as flag in the following form: lakshya_CTF{passwordhere}
-                                </p>
+                                <p>{{ question.Qdes }}</p>
                                 <a target="_blank" href="#!" class="btn btn-outline-secondary btn-shadow"><span class="fa fa-download mr-2"></span>Download</a>
                                 <a href="#hint" data-toggle="modal" data-target="#hint" class="btn btn-outline-secondary btn-shadow"><span class="far fa-lightbulb mr-2"></span>Hint</a>
-                                <div class="input-group mt-3">
+                                <div class="input-group mt-3" >
                                     <div class="custom-control custom-radio">
-                                        <input type="radio" id="customRadio1_p1" name="customRadio_p1" class="custom-control-input">
+                                        <input type="radio" value="VE" id="customRadio1_p1" name="customRadio_p1" class="custom-control-input">
                                         <label class="custom-control-label" for="customRadio1_p1" checked=false>Very Easy</label>
                                     </div>
                                     <div class="ht-tm-element custom-control custom-radio">
-                                        <input type="radio" id="customRadio2_p1" name="customRadio_p1" class="custom-control-input">
+                                        <input type="radio" value="E" id="customRadio2_p1" name="customRadio_p1" class="custom-control-input">
                                         <label class="custom-control-label" for="customRadio2_p1">Easy</label>
                                     </div>
                                     <div class="ht-tm-element custom-control custom-radio">
-                                        <input type="radio" id="customRadio3_p1" name="customRadio_p1" class="custom-control-input">
+                                        <input type="radio" value="M" id="customRadio3_p1" name="customRadio_p1" class="custom-control-input">
                                         <label class="custom-control-label" for="customRadio3_p1">Medium</label>
                                     </div>
                                     <div class="ht-tm-element custom-control custom-radio">
-                                        <input type="radio" id="customRadio4_p1" name="customRadio_p1" class="custom-control-input">
+                                        <input type="radio" value="H" id="customRadio4_p1" name="customRadio_p1" class="custom-control-input">
                                         <label class="custom-control-label" for="customRadio4_p1">Hard</label>
                                     </div>
                                     <div class="ht-tm-element custom-control custom-radio">
-                                        <input type="radio" id="customRadio5_p1" name="customRadio_p1" class="custom-control-input">
+                                        <input type="radio" value="VH" id="customRadio5_p1" name="customRadio_p1" class="custom-control-input">
                                         <label class="custom-control-label" for="customRadio5_p1">Very Hard</label>
                                     </div>
                                 </div>
                                 <div class="input-group mt-3">
-                                    <input type="text" class="form-control" placeholder="Enter Flag" aria-label="Enter Flag" aria-describedby="basic-addon2">
+                                    <input type="text" name="flag" class="form-control" placeholder="Enter Flag" aria-label="Enter Flag" aria-describedby="basic-addon2">
                                     <div class="input-group-append">
-                                        <button id="submit_p1" class="btn btn-outline-secondary" type="button">Go!</button>
+                                     <button id="submit_p1" class="btn btn-outline-secondary" name="{{ questions.Qid }}" type="submit">Go!</button>
+
                                     </div>
                                 </div>
                             </blockquote>
                         </div>
                     </div>
                 </div>
+                {% endfor %}
+             
                 <div class="col-md-4 mb-3">
                     <div class="card category_reversing">
                         <div class="card-header" data-target="#problem_id_2" data-toggle="collapse" aria-expanded="false" aria-controls="problem_id_2">

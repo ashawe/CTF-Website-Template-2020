@@ -1,6 +1,13 @@
 from django.db import models
 from django.contrib.auth.models import User
 
+VERY_EASY = 'VE'
+EASY = 'E'
+MEDIUM = 'M'
+HARD = 'H'
+VERY_HARD = 'VH'
+difficulty = [(VERY_EASY, 'very_easy'), (EASY,'easy'), (MEDIUM, 'medium'), (HARD, 'hard'), (VERY_HARD, 'very_hard')]
+
 
 class UserProfile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
@@ -23,9 +30,10 @@ class Questions(models.Model):
     Qid = models.IntegerField(default='0')
     Qtitle = models.CharField(max_length=70)
     Qdes = models.CharField(max_length=1000)
+    Hint = models.CharField(max_length=500, default="this is hint")
+    level = models.CharField(max_length=2, choices=difficulty, default=HARD)
     flag = models.CharField(max_length=100, default='pict_CTF{}')
     points = models.IntegerField(default=0)
-    submit = models.IntegerField(default=0)
     solved = models.IntegerField(default=0)
 
 
