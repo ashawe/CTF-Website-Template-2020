@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,12 +10,12 @@
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="css/bootstrap4-neon-glow.min.css">
+    <link rel="stylesheet" href="{% static 'css/bootstrap4-neon-glow.min.css'%}">
 
 
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link rel='stylesheet' href='//cdn.jsdelivr.net/font-hack/2.020/css/hack.min.css'>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/font-hack/2.020/css/hack.min.css'>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
 </head>
 
 <body class="imgloaded">
@@ -49,7 +50,8 @@
 
         </div>
     </div>
-
+<form action='login' method='post'>
+                    {% csrf_token %}
     <div class="jumbotron bg-transparent mb-0 pt-3 radius-0">
         <div class="container">
             <div class="row">
@@ -61,27 +63,29 @@
                     <div class="row hackerFont">
                         <div class="col-md-6">
                             <div class="form-group">
-                                <input type="text" class="form-control" id="team_name" placeholder="Team name">
+                                <input type="text" class="form-control" name="username" placeholder="Team name">
                             </div>
                             <div class="form-group">
-                                <input type="password" class="form-control" id="password" placeholder="Password">
+                                <input type="password" class="form-control" name="password" placeholder="Password">
                                 <small id="passHelp" class="form-text text-muted">Make sure nobody's behind you</small>
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
             <div class="row">
                 <div class="col-xl-8">
-                    <button class="btn btn-outline-danger btn-shadow px-3 my-2 ml-0 ml-sm-1 text-left typewriter" onclick="window.location.href='instructions.html';">
+                    <button class="btn btn-outline-danger btn-shadow px-3 my-2 ml-0 ml-sm-1 text-left typewriter" type = submit>
                     <h4>Login</h4>
                     </button>
                     <small id="registerHelp" class="mt-3 form-text text-muted">Not Registered? <a href="register.html">Register here</a></small>
                 </div>
             </div>
+
         </div>
     </div>
-
+  </form>
 
 
     <!-- Optional JavaScript -->
@@ -94,3 +98,25 @@
 </body>
 
 </html>
+
+<!--
+<html>
+<head>
+</head>
+<body>
+    <form action='login' method='post'>
+        {% csrf_token %}
+        <input type="text" name="username" placeholder="username"><br>
+        <input type="password" name="password" placeholder="password"><br>
+        <input type="submit">
+    </form>
+
+    <div>
+        {% for message in messages %}
+        <h3>{{message}}</h3>
+        {% endfor %}
+    </div>
+
+</body>
+</html>
+-->
