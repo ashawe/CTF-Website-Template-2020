@@ -101,7 +101,8 @@ def first(request):
             req = request.POST
             Qid = req.get('Qid')
             flag = req.get('flag')
-            level = req.get('customRadio_p2')
+            level = req.get('customRadio')
+            print(level)
             quest = Questions.objects.get(Qid=int(Qid))
             quest.Qid = Qid
             quest.level = level
@@ -120,7 +121,9 @@ def first(request):
                     solved.question = quest
                     solved.user = userprofile
                     solved.sub_time = calc()
+                    user.time = solved.sub_time
                     quest.solved += 1
+                    userprofile.totlesub += 1
                     userprofile.save()
                     solved.save()
 
@@ -145,7 +148,9 @@ def logout(request):
 
 
 def leaderboard(request):
-    data = UserProfile.objects.all()
+    data = UserProfile.objects.all().order_by("-score")
+
+
     return render(request, 'ctf/hackerboard.html', {'data': data})
 
 

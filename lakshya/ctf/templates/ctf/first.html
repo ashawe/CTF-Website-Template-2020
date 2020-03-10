@@ -21,7 +21,7 @@
 				{% csrf_token %}
 				<input type="hidden" name="Qid" id="Qid" value={{question.Qid}}>
 				<label>Enter your flag:</label>
-				<input name='flag' type="text" class="form-control" name="flag" id="flag">
+				<input  type="text" class="form-control" name="flag" id="flag">
 				<button type="submit" name={{questions.Qid}}>Submit</button>
 			</form>
 		{% endfor %}
