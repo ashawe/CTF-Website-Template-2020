@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Lakshya CTF</title>
+
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/bootstrap4-neon-glow.min.css">
+
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel='stylesheet' href='//cdn.jsdelivr.net/font-hack/2.020/css/hack.min.css'>
+    <script src="js/chart.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+</head>
+
+<body>
+    <div class="navbar-dark text-white">
+        <div class="container">
+            <nav class="navbar px-0 py-0 navbar-expand-lg navbar-dark">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a href="index.html" class="pl-md-0 p-3 text-decoration-none text-light">
+                            <h3 class="bold"><span class="color_danger">LAKSHYA</span><span class="color_white">CTF</span></h3>
+                        </a>
+                    </div>
+                    <div class="navbar-nav ml-auto">
+                        <a href="index.html" class="p-3 text-decoration-none text-light bold">Home</a>
+                        <a href="about.html" class="p-3 text-decoration-none text-light bold">About</a>
+                        <a href="hackerboard.html" class="p-3 text-decoration-none text-light bold">Hackerboard</a>
+                        <a href="quests.html" class="p-3 text-decoration-none text-white bold">Challenges</a>
+                        <a href="#" class="p-3 text-decoration-none text-light bold">Logout</a>
+                    </div>
+                </div>
+            </nav>
+
+        </div>
+    </div>
+
+    <div class="jumbotron bg-transparent mb-0 pt-0 radius-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12  text-center">
+                    <h1 class="display-1 bold color_white content__title">HEADACHE<span class="vim-caret">&nbsp;</span></h1>
+                    <p class="text-grey text-spacey hackerFont lead mb-5">
+                        Some random info about the machine if any. Some random info about the machine if any.
+                    </p>
+                </div>
+            </div>
+            <div class="row hackerFont">
+            </div>
+            <h4>Machine info</h4>
+            <div class="row mt-5">
+                <div class="col-md-6">
+                    <div class="col-md-12">
+                        <div class="card border-primary mb-3 text-center">
+                            <div class="card-body">
+
+                                <h4>Machine IP: 10.10.11.117</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="card border-primary mb-3 text-center">
+                            <div class="card-body">
+
+                                <h4>Base Points: 80</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="card border-primary mb-3 text-center">
+                            <div class="card-body machine_page justify-content-center" style="display: inline-flex;">
+                                <h6 class="solvers">Solvers: <span class="solver_num">76</span> &nbsp;<span class="color_danger">Difficulty:</span></h6>
+                                <div class="pl-2"><canvas style="width:80px;height:15px" id="machine_id_1_chart"></canvas></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="col-md-12">
+                        <div class="card border-primary mb-3 text-center">
+                            <div class="card-body">
+                                <canvas id="machineChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="card border-primary mb-3 text-center">
+                        <div class="card-body">
+                            <h4>Rate the challenge</h4>
+                            <div class="row input-group mt-3 justify-content-center">
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" id="customRadio1_p1" name="customRadio_p1" class="custom-control-input">
+                                    <label class="custom-control-label" for="customRadio1_p1" checked=false>Very Easy</label>
+                                </div>
+                                <div class="ht-tm-element custom-control custom-radio">
+                                    <input type="radio" id="customRadio2_p1" name="customRadio_p1" class="custom-control-input">
+                                    <label class="custom-control-label" for="customRadio2_p1">Easy</label>
+                                </div>
+                                <div class="ht-tm-element custom-control custom-radio">
+                                    <input type="radio" id="customRadio3_p1" name="customRadio_p1" class="custom-control-input">
+                                    <label class="custom-control-label" for="customRadio3_p1">Medium</label>
+                                </div>
+                                <div class="ht-tm-element custom-control custom-radio">
+                                    <input type="radio" id="customRadio4_p1" name="customRadio_p1" class="custom-control-input">
+                                    <label class="custom-control-label" for="customRadio4_p1">Hard</label>
+                                </div>
+                                <div class="ht-tm-element custom-control custom-radio">
+                                    <input type="radio" id="customRadio5_p1" name="customRadio_p1" class="custom-control-input">
+                                    <label class="custom-control-label" for="customRadio5_p1">Very Hard</label>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center pb-3">
+                                <div class="input-group mt-3 col-md-6">
+                                    <input type="text" class="form-control" placeholder="Enter Flag" aria-label="Enter Flag" aria-describedby="basic-addon2">
+                                    <div class="input-group-append">
+                                        <button id="submit_p1" class="btn btn-outline-secondary" type="button">Go!</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="hint" tabindex="-1" role="dialog" aria-labelledby="hint label" style="display: none;" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        HINT GOES HERE
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            var config = {
+                type: 'radar',
+                data: {
+                    labels: [
+                        'Enumeration', 'CTF-Like', 'Custom Exploration', 'Real-life', 'CVE'
+                    ],
+                    datasets: [{
+                        label: 'Problem Setter\'s Ratings',
+                        backgroundColor: "#ff000054",
+                        borderColor: 'red',
+                        pointBackgroundColor: 'red',
+                        data: [
+                            3,
+                            2,
+                            1,
+                            5,
+                            3,
+                        ]
+                    }, ]
+                },
+                options: {
+                    legend: {
+                        display: false,
+                    },
+                    scale: {
+                        ticks: {
+                            display: false,
+                        },
+                        gridLines: {
+                            color: "#FFF"
+                        }
+                    }
+                }
+            };
+
+            window.myRadar = new Chart(document.getElementById('machineChart'), config);
+            var matrixOptions = {
+                legend: {
+                    display: false,
+                    position: 'left',
+                },
+                title: {
+                    display: false,
+                },
+                elements: {
+                    line: {
+                        tension: 0,
+                        borderWidth: 3
+                    }
+                },
+                scale: {
+                    pointLabels: {
+                        fontColor: ['#00F', '#F00']
+                    },
+                    display: true,
+                    ticks: {
+                        display: false,
+                        max: 10,
+                        min: 0
+                    },
+                    gridLines: {
+                        color: "#37393F"
+                    },
+                }
+            };
+            var ctx = document.getElementById('machine_id_1_chart').getContext('2d');
+            window.myBar = new Chart(ctx, {
+                type: 'bar',
+                data: barChartData = {
+                    labels: ['Easy1', 'Easy2', 'Medium3', 'Hard4', 'Hard5'],
+                    datasets: [{
+                        label: 'Dataset 1',
+                        backgroundColor: [
+                            '#17b06b', '#17b06b', '#ffce56', '#ef121b', '#ef121b'
+                        ],
+                        borderColor: [
+                            '#17b06b', '#17b06b', '#ffce56', '#ef121b', '#ef121b'
+                        ],
+                        borderWidth: 1,
+                        data: [11, 2, 13, 41, 15, 0]
+                    }]
+
+                },
+                options: {
+                    tooltips: {
+                        enabled: false,
+                    },
+                    responsive: false,
+                    legend: {
+                        display: false,
+                    },
+                    scales: {
+                        yAxes: [{
+                            display: false
+                        }],
+                        xAxes: [{
+                            display: false
+                        }]
+                    }
+                }
+            });
+        </script>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
