@@ -76,7 +76,23 @@ body {
 
 .solvers {
     color: #36a2eb;
-    font-size: 0.75rem;
+    font-size: 1rem;
+}
+
+.solver_num {
+    color: white;
+}
+
+.machine .solvers {
+    font-size: 1rem!important;
+}
+
+.machine_page .solvers {
+    font-size: 1.25rem!important;
+}
+
+.ip {
+    padding-right: 20px;
 }
 
 .category_web {
@@ -92,7 +108,16 @@ body {
 }
 
 .category_pwning {
-    border-top: 4px solid #36a2eb94;
+    border-top: 4px solid #00a09994;
+}
+
+.category_machine {
+    border-top: 4px solid #0f329894;
+}
+
+.category_machine a:hover {
+    text-decoration: none;
+    color: inherit;
 }
 
 .category_misc {

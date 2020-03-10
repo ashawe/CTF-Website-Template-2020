@@ -59,6 +59,9 @@
             </div>
             {% for question in questions %}
             <div class="row hackerFont">
+                <div class="col-md-12">
+                    <h4>Challenges</h4>
+                </div>
                 <div class="col-md-4 mb-3">
                     <div class="card category_web">
                         <div class="card-header solved" data-target="#problem_id_1" data-toggle="collapse" aria-expanded="false" aria-controls="problem_id_1">
@@ -67,8 +70,13 @@
                         <div id="problem_id_1" class="collapse card-body">
                             <blockquote class="card-blockquote">
                                 <div style="display: flex;">
+<<<<<<< HEAD:lakshya/ctf/templates/ctf/quests.html
                                     <h6 class="solvers">Solvers:{{ question.solved }} &nbsp;<span class="color_danger">Difficulty:</span></h6>
                                     <div class="pl-2"><canvas style="width:80px;height:15px" id="problem_id_1_chart"></canvas></div>
+=======
+                                    <h6 class="solvers">Solvers: <span class="solver_num">76</span> &nbsp;<span class="color_danger">Difficulty:</span></h6>
+                                    <div class="pl-2"><canvas style="width:80px;height:20px" id="problem_id_1_chart"></canvas></div>
+>>>>>>> a9e5cb5a47180a19a975491be07ebc96b85cd597:quests.html
                                 </div>
                                 <p>{{ question.Qdes }}</p>
                                 <a target="_blank" href="#!" class="btn btn-outline-secondary btn-shadow"><span class="fa fa-download mr-2"></span>Download</a>
@@ -116,8 +124,8 @@
                         <div id="problem_id_2" class="collapse card-body">
                             <blockquote class="card-blockquote">
                                 <div style="display: flex;">
-                                    <h6 class="solvers">Solvers: 76 &nbsp;<span class="color_danger">Difficulty:</span></h6>
-                                    <div class="pl-2"><canvas style="width:80px;height:15px" id="problem_id_2_chart"></canvas></div>
+                                    <h6 class="solvers">Solvers: <span class="solver_num">76</span> &nbsp;<span class="color_danger">Difficulty:</span></h6>
+                                    <div class="pl-2"><canvas style="width:80px;height:20px" id="problem_id_2_chart"></canvas></div>
                                 </div>
                                 <p> Can you find the password? Enter the password as flag in the following form: lakshya_CTF{passwordhere}
                                 </p>
@@ -163,8 +171,8 @@
                         <div id="problem_id_3" class="collapse card-body">
                             <blockquote class="card-blockquote">
                                 <div style="display: flex;">
-                                    <h6 class="solvers">Solvers: 76 &nbsp;<span class="color_danger">Difficulty:</span></h6>
-                                    <div class="pl-2"><canvas style="width:80px;height:15px" id="problem_id_3_chart"></canvas></div>
+                                    <h6 class="solvers">Solvers: <span class="solver_num">76</span> &nbsp;<span class="color_danger">Difficulty:</span></h6>
+                                    <div class="pl-2"><canvas style="width:80px;height:20px" id="problem_id_3_chart"></canvas></div>
                                 </div>
                                 <p> Can you find the password? Enter the password as flag in the following form: lakshya_CTF{passwordhere}
                                 </p>
@@ -210,8 +218,8 @@
                         <div id="problem_id_4" class="collapse card-body">
                             <blockquote class="card-blockquote">
                                 <div style="display: flex;">
-                                    <h6 class="solvers">Solvers: 76 &nbsp;<span class="color_danger">Difficulty:</span></h6>
-                                    <div class="pl-2"><canvas style="width:80px;height:15px" id="problem_id_4_chart"></canvas></div>
+                                    <h6 class="solvers">Solvers: <span class="solver_num">76</span> &nbsp;<span class="color_danger">Difficulty:</span></h6>
+                                    <div class="pl-2"><canvas style="width:80px;height:20px" id="problem_id_4_chart"></canvas></div>
                                 </div>
                                 <p> Can you find the password? Enter the password as flag in the following form: lakshya_CTF{passwordhere}
                                 </p>
@@ -257,8 +265,8 @@
                         <div id="problem_id_5" class="collapse card-body">
                             <blockquote class="card-blockquote">
                                 <div style="display: flex;">
-                                    <h6 class="solvers">Solvers: 76 &nbsp;<span class="color_danger">Difficulty:</span></h6>
-                                    <div class="pl-2"><canvas style="width:80px;height:15px" id="problem_id_5_chart"></canvas></div>
+                                    <h6 class="solvers">Solvers: <span class="solver_num">76</span> &nbsp;<span class="color_danger">Difficulty:</span></h6>
+                                    <div class="pl-2"><canvas style="width:80px;height:20px" id="problem_id_5_chart"></canvas></div>
                                 </div>
                                 <p> Can you find the password? Enter the password as flag in the following form: lakshya_CTF{passwordhere}
                                 </p>
@@ -304,8 +312,8 @@
                         <div id="problem_id_6" class="collapse card-body">
                             <blockquote class="card-blockquote">
                                 <div style="display: flex;">
-                                    <h6 class="solvers">Solvers: 76 &nbsp;<span class="color_danger">Difficulty:</span></h6>
-                                    <div class="pl-2"><canvas style="width:80px;height:15px" id="problem_id_6_chart"></canvas></div>
+                                    <h6 class="solvers">Solvers: <span class="solver_num">76</span> &nbsp;<span class="color_danger">Difficulty:</span></h6>
+                                    <div class="pl-2"><canvas style="width:80px;height:20px" id="problem_id_6_chart"></canvas></div>
                                 </div>
                                 <p> Can you find the password? Enter the password as flag in the following form: lakshya_CTF{passwordhere}
                                 </p>
@@ -344,7 +352,41 @@
                     </div>
                 </div>
             </div>
-            <div class="row mt-5 pt-5 hackerFont">
+
+            <div class="row hackerFont justify-content-center mt-5">
+                <div class="col-md-12">
+                    <h4>Machines</h4>
+                </div>
+                <div class="col-md-12 mb-3">
+                    <div class="card category_machine">
+                        <a href="machine.html" class="color_white">
+                            <div class="card-header">
+                                Headache <span class=" ml-4 badge align-self-end">1000 points</span>
+                                <div class="pl-4 machine" style="display: inline-flex;">
+                                    10.10.15.117
+                                    <h6 class=" pl-4 pt-1 solvers">Solvers: <span class="solver_num">76</span> &nbsp;<span class="color_danger">Difficulty:</span></h6>
+                                    <div class="pl-2"><canvas style="width:80px;height:20px" id="problem_id_7_chart"></canvas></div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-12 mb-3">
+                    <div class="card category_machine">
+                        <a href="machine.html" class="color_white">
+                            <div class="card-header">
+                                CORONA <span class=" ml-4 badge align-self-end">1000 points</span>
+                                <div class="pl-4 machine" style="display: inline-flex;">
+                                    10.10.15.112
+                                    <h6 class=" pl-4 pt-1 solvers">Solvers: <span class="solver_num">76</span> &nbsp;<span class="color_danger">Difficulty:</span></h6>
+                                    <div class="pl-2"><canvas style="width:80px;height:20px" id="problem_id_8_chart"></canvas></div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row hackerFont justify-content-center mt-5">
                 <div class="col-md-12">
                     Chart Difficulties:
                     <span style="color:#17b06b">Very Easy,</span>
@@ -379,6 +421,8 @@
                 [71, 12, 13, 17, 25, 0],
                 [31, 5, 23, 24, 10, 0],
                 [11, 2, 13, 41, 15, 0],
+                [31, 5, 23, 24, 10, 0],
+                [11, 2, 13, 41, 15, 0],
             ]
 
             function getBarChartData(i) {
@@ -400,7 +444,7 @@
             }
 
             window.onload = function() {
-                var numcharts = 6;
+                var numcharts = 8;
                 for (let i = 1; i <= numcharts; i++) {
                     var ctx = document.getElementById('problem_id_' + i + '_chart').getContext('2d');
                     window.myBar = new Chart(ctx, {
@@ -425,7 +469,7 @@
                         }
                     });
                     myBar.canvas.parentNode.style.width = '80px';
-                    myBar.canvas.parentNode.style.height = '15px';
+                    myBar.canvas.parentNode.style.height = '20px';
                 }
             };
         </script>
