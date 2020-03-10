@@ -76,7 +76,23 @@ body {
 
 .solvers {
     color: #36a2eb;
-    font-size: 0.75rem;
+      font-size: 1rem;
+}
+
+.solver_num {
+    color: white;
+}
+
+.machine .solvers {
+    font-size: 1rem!important;
+}
+
+.machine_page .solvers {
+    font-size: 1.25rem!important;
+}
+
+.ip {
+    padding-right: 20px;
 }
 
 .category_web {

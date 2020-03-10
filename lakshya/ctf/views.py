@@ -127,6 +127,7 @@ def first(request):
                     userprofile.save()
                     solved.save()
 
+
                     print(userprofile.score)
                     print("FLAG IS CORRECT!")
                     messages.success(request, 'FLAG IS CORRECT!')

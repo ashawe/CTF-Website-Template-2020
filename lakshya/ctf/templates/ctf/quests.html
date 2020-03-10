@@ -353,6 +353,40 @@
                 </div>
             </div>
             <div class="row mt-5 pt-5 hackerFont">
+                    <div class="row hackerFont justify-content-center mt-5">
+                <div class="col-md-12">
+                    <h4>Machines</h4>
+                </div>
+                <div class="col-md-12 mb-3">
+                    <div class="card category_machine">
+                        <a href="machine.html" class="color_white">
+                            <div class="card-header">
+                                Headache <span class=" ml-4 badge align-self-end">1000 points</span>
+                                <div class="pl-4 machine" style="display: inline-flex;">
+                                    10.10.15.117
+                                    <h6 class=" pl-4 pt-1 solvers">Solvers: <span class="solver_num">76</span> &nbsp;<span class="color_danger">Difficulty:</span></h6>
+                                    <div class="pl-2"><canvas style="width:80px;height:20px" id="problem_id_7_chart"></canvas></div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-12 mb-3">
+                    <div class="card category_machine">
+                        <a href="machine.html" class="color_white">
+                            <div class="card-header">
+                                CORONA <span class=" ml-4 badge align-self-end">1000 points</span>
+                                <div class="pl-4 machine" style="display: inline-flex;">
+                                    10.10.15.112
+                                    <h6 class=" pl-4 pt-1 solvers">Solvers: <span class="solver_num">76</span> &nbsp;<span class="color_danger">Difficulty:</span></h6>
+                                    <div class="pl-2"><canvas style="width:80px;height:20px" id="problem_id_8_chart"></canvas></div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row hackerFont justify-content-center mt-5">
                 <div class="col-md-12">
                     Chart Difficulties:
                     <span style="color:#17b06b">Very Easy,</span>
@@ -408,7 +442,7 @@
             }
 
             window.onload = function() {
-                var numcharts = 6;
+                var numcharts = 8;
                 for (let i = 1; i <= numcharts; i++) {
                     var ctx = document.getElementById('problem_id_' + i + '_chart').getContext('2d');
                     window.myBar = new Chart(ctx, {
