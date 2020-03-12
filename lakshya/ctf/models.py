@@ -13,6 +13,7 @@ class UserProfile(models.Model):
     year = models.CharField(max_length=100)
     score = models.IntegerField(default=0)
     time = models.TimeField(default="00:00")
+    Rid = models.CharField(max_length=100, default="EINC-5e5a")   #reciept id
 
     def __str__(self):
         return self.user.username

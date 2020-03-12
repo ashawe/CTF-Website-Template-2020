@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,14 +10,14 @@
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="css/bootstrap4-neon-glow.min.css">
+    <link rel="stylesheet" href="{% static 'css/bootstrap4-neon-glow.min.css'%}">
 
 
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link rel='stylesheet' href='//cdn.jsdelivr.net/font-hack/2.020/css/hack.min.css'>
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/font-hack/2.020/css/hack.min.css'>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="{% static 'css/main.css'%}">
 </head>
 
 <body class="imgloaded">
@@ -42,7 +43,7 @@
                     <div class="navbar-nav ml-auto">
                         <a href="index.html" class="p-3 text-decoration-none text-light bold">Home</a>
                         <a href="about.html" class="p-3 text-decoration-none text-light bold">About</a>
-                        <a href="hackerboard.html" class="p-3 text-decoration-none text-white bold">Hackerboard</a>
+                        <a href="/leaderboard" class="p-3 text-decoration-none text-white bold">Hackerboard</a>
                         <a href="login.html" class="p-3 text-decoration-none text-light bold">Login</a>
                         <a href="register.html" class="p-3 text-decoration-none text-light bold">Register</a>
                     </div>
