@@ -76,7 +76,7 @@ body {
 
 .solvers {
     color: #36a2eb;
-    font-size: 1rem;
+      font-size: 1rem;
 }
 
 .solver_num {
@@ -108,16 +108,7 @@ body {
 }
 
 .category_pwning {
-    border-top: 4px solid #00a09994;
-}
-
-.category_machine {
-    border-top: 4px solid #0f329894;
-}
-
-.category_machine a:hover {
-    text-decoration: none;
-    color: inherit;
+    border-top: 4px solid #36a2eb94;
 }
 
 .category_misc {
