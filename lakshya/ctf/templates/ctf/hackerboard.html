@@ -60,6 +60,7 @@
                     <h1 class="display-1 bold color_white content__title text-center"><span class="color_danger">HACKER</span>BOARD<span class="vim-caret">&nbsp;</span></h1>
                     <p class="text-grey lead text-spacey text-center hackerFont">
                         Where the world get's ranked!
+
                     </p>
                     <div class="row justify-content-center my-5">
                         <div class="col-xl-10">
@@ -80,14 +81,23 @@
                                 <th>Score</th>
                             </tr>
                         </thead>
-                        <tbody>{% for i in data %}
+                        <tbody>
+                        {% for i in user %}
                             <tr>
-                                <th scope="row">{{ i.id }}</th>
+                                <th scope="row">{{ forloop.counter }}</th>
                                 <td>{{ i.user }}</td>
-                                <td>{{ i.solved }}</td>
-                                <td>{{ i.time }}</td>
+                                <td>{{ i.totlesub }}</td>
+                                <td>{{ i.latest_sub_time }}</td>
                                 <td>{{ i.score }}</td>
                             </tr> {% endfor %}
+<!--                      {% for i in sub %}-->
+<!--                            <tr>-->
+<!--                                <th scope="row">{{ forloop.counter }}</th>-->
+<!--                                <td>{{ i.0.user_id }}</td>-->
+<!--                                <td>{{ i.question.id }}</td>-->
+<!--                                <td>{{ i.0.sub_time }}</td>-->
+<!--                                <td>{{ i.curr_score }}</td>-->
+<!--                            </tr>  {% endfor %}-->
                            <!-- <tr>
                                 <th scope="row">2</th>
                                 <td>CR007</td>
@@ -125,126 +135,46 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script>
-        var s1 = {
-            label: 'ashawe',
-            borderColor: 'blue',
+var colour = ['blue','pink','yellow','red','white'];
+var userlist = [];
+ {% for u in user|slice:"5" %}
+ userlist.push("{{u.user}}")
+ {% endfor %}
+
+
+{% for i in sub|slice:"5" %}
+    var {% cycle 's1' 's2' 's3' 's4' 's5' %} = {
+            label: userlist[{{ forloop.counter0 }}],
+            borderColor: colour[{{ forloop.counter0 }}],
             steppedLine: true,
-            data: [{
+
+
+            data: [
+             {
                 x: '2017-01-06 00:00:00',
                 y: 00
-            }, {
-                x: '2017-01-06 00:07:00',
-                y: 100
-            }, {
-                x: '2017-01-06 00:15:40',
-                y: 300
-            }, {
-                x: '2017-01-06 00:18:10',
-                y: 260
-            }, {
-                x: '2017-01-06 00:20:40',
-                y: 350
-            }, {
-                x: '2017-01-06 00:30:20',
-                y: 400
-            }, {
-                x: '2017-01-06 00:40:10',
-                y: 550
-            }, ]
+            },
+
+               {% for j in i %}
+
+  {
+                x: '2017-01-06 {{ j.sub_time }}',
+                y: {{ j.curr_score }}
+               },
+
+                    {% endfor %}
+
+
+            ]
         };
 
-        var s3 = {
-            label: 'anonymous',
-            borderColor: 'green',
-            steppedLine: true,
-            data: [{
-                x: '2017-01-06 00:00:00',
-                y: 00
-            }, {
-                x: '2017-01-06 00:10:00',
-                y: 120
-            }, {
-                x: '2017-01-06 00:15:00',
-                y: 400
-            }, {
-                x: '2017-01-06 00:21:00',
-                y: 360
-            }, {
-                x: '2017-01-06 00:25:00',
-                y: 390
-            }, {
-                x: '2017-01-06 00:40:00',
-                y: 650
-            }, ]
-        };
-
-        var s2 = {
-            label: 'CR007',
-            borderColor: 'red',
-            steppedLine: true,
-            data: [{
-                x: '2017-01-06 00:00:00',
-                y: 00
-            }, {
-                x: '2017-01-06 00:05:00',
-                y: 150
-            }, {
-                x: '2017-01-06 00:15:00',
-                y: 350
-            }, {
-                x: '2017-01-06 00:21:00',
-                y: 500
-            }, {
-                x: '2017-01-06 00:25:00',
-                y: 800
-            }, {
-                x: '2017-01-06 00:40:00',
-                y: 900
-            }, {
-                x: '2017-01-06 00:44:59',
-                y: 1900
-            }, ]
-        };
-
-        var s4 = {
-            label: 'liveoverflow',
-            borderColor: 'pink',
-            steppedLine: true,
-            data: [{
-                x: '2017-01-06 00:00:00',
-                y: 00
-            }, {
-                x: '2017-01-06 00:03:00',
-                y: 100
-            }, {
-                x: '2017-01-06 00:07:34',
-                y: 250
-            }, {
-                x: '2017-01-06 00:10:45',
-                y: 500
-            }, {
-                x: '2017-01-06 00:13:29',
-                y: 650
-            }, {
-                x: '2017-01-06 00:21:00',
-                y: 900
-            }, {
-                x: '2017-01-06 00:33:59',
-                y: 1350
-            }, {
-                x: '2017-01-06 00:39:00',
-                y: 1680
-            }, {
-                x: '2017-01-06 00:42:59',
-                y: 2540
-            }, ]
-        };
+{% endfor %}
 
         var ctx = document.getElementById('myChart').getContext('2d');
         var chart = new Chart(ctx, {
             type: 'line',
             data: {
-                datasets: [s1, s2, s3, s4]
+                datasets: [ {% for u in user|slice:"5" %}  {% cycle 's1' 's2' 's3' 's4' 's5' %}, {% endfor %}]
             },
             options: {
                 scales: {
