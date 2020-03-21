@@ -11,6 +11,7 @@ CTF-Website-Template-2020 is a frontend template made for a simple CTF event. Yo
 - Leaderboard Page
 - About / Rules Page
 - Instructions Page
+- Machine Page ( Info page for containers / boxes )
 
 ## What is this repo?
 - A front end template
@@ -18,6 +19,8 @@ CTF-Website-Template-2020 is a frontend template made for a simple CTF event. Yo
 
 ## What it isn't... YET?
 - Fully functional dynamic CTF website
+- Backend is being developed in **Django** Framework by [RutujaD182](https://github.com/RutujaD182)
+  - checkout [backend](https://github.com/ashawe/CTF-Website-Template-2020/tree/backend) branch for this
 
 ## Getting Started
 
@@ -48,7 +51,8 @@ Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduc
 
 ## Authors
 
-* **Harsh Saglani** - *Initial work* - [ashawe](https://github.com/ashawe)
+* **Harsh Saglani** ( [ashawe](https://github.com/ashawe) ) - *Initial work* & *Frontend*
+* **Rutuja Dhanawade** ( [RutujaD182](https://github.com/RutujaD182) ) - *Backend*
 
 See also the list of [contributors](https://github.com/ashawe/CTF-Website-Template-2020/graphs/contributors) who participated in this project.
 
