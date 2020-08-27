@@ -25,7 +25,7 @@ git clone https://github.com/<your-username>/CTF-Website-Template-2020
 cd CTF-Website-Template-2020
 
 # Assign the original repo to a remote called "upstream"
-git remote add upstream https://github.com/ashawe/CTF-Website-Template-2020
+git remote add upstream https://github.com/<your-username>/CTF-Website-Template-2020
 ```
 If this is something you think you can fix, then fork and create a branch with a descriptive name.
 
@@ -35,7 +35,7 @@ A good branch name would be (where issue #325 is the ticket you're working on):
 git checkout -b 325-add-japanese-translations
 ```
 
-When merging pull requests, your commits will be squashed. So make sure you explain your pull requests properly More in [Pull Requests](#Pull-Requests)
+When merging pull requests, your commits will be squashed. So make sure you explain your pull requests properly. More about [Pull Requests here](#Pull-Requests)
 
 ### 2.  Did you find a bug?
 
@@ -46,7 +46,7 @@ If you're unable to find an open issue addressing the problem, [open a new one](
 ### 3. Implement your fix or feature
 
 *    At this point, you're ready to make your changes! Feel free to ask for help; everyone is a beginner at first 😸
-*    Write a good commit message. To write good commit messages, please follow [those recommendations](https://github.com/ashawe/CTF-Website-Template-2020/blob/master/COMMIT-GUIDLINES.md). There are important to maintain an healthy commit logs.
+*    Write a good commit message. To write good commit messages, please follow [these recommendations](https://github.com/ashawe/CTF-Website-Template-2020/blob/master/COMMIT-GUIDLINES.md). There are important to maintain an healthy commit logs.
 *    If there are multiple commits in your pull request, these commits will be squashed before merging. Please make sure, if that's the case, that your pull request has a nice description explaining what it does.
 *    It's okay to have work-in-progress pull requests. Add [WIP] in the title of your pull request if that's the case, otherwise your pull request will be considered in a state of being able to be merged as is.
 
@@ -65,7 +65,7 @@ git push
 
 Use GitHub to [create a pull request](https://help.github.com/en/desktop/contributing-to-projects/creating-a-pull-request) for your branch. In your pull request description, be sure to mention your changes
 
-If everything looks good, a maintainer will approve and merge the pull request when appropriate. After the pull request is merged, your icon will be available in the next Octicons release.
+If everything looks good, a maintainer will approve and merge the pull request when appropriate. After the pull request is merged, you'll appear in the contributers section.
 
 ### 6. Wait for the code to be reviewed
 
@@ -93,6 +93,7 @@ For example:
 Doesn't tell me anything about why you're doing that
 
 > Add link to code of conduct in README.md because users don't always look in the CONTRIBUTING.md
+
 Tells me the problem that you have found, and the pull request shows me the action you have taken to solve it.
 
 
@@ -110,9 +111,4 @@ The aim of this repository is:
 * Make it easier for CTF organizers to host CTFs by giving them a good looking UI
 * Foster a culture of respect and gratitude in the open source community.
 
-## Please note that
-If there are multiple commits in your pull request, these commits will be squashed before merging. 
-
-Make sure, if that's the case, that your pull request has a nice description explaining what it does.
-
-It's okay to have work-in-progress pull requests. Add [WIP] in the title of your pull request if that's the case, otherwise your pull request will be considered in a state of being able to be merged as is.
+# Happy Coding!
