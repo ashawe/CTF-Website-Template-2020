@@ -1,4 +1,4 @@
-# CTF-Website-Template-2020
+### CTF-Website-Template-2021
 
 [ TLDR ] Front end of a Capture the Flag ( CTF ) website. 
 
