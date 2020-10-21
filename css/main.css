@@ -179,6 +179,15 @@ button.typewriter {
     animation-fill-mode: forwards;
 }
 
+.toggle-yes { border-radius: 6px 0 0 6px !important; }
+.toggle-no { border-radius: 0 6px 6px; }
+
+input[type="radio"].toggle { display: none; }
+input[type="radio"].toggle:checked + label {
+    background-color: #714cdf;
+    color: #fff;
+}
+
 
 /* The typing effect */
 
