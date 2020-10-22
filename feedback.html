@@ -58,7 +58,7 @@
                     <form class="needs-validation" novalidate>
                         <div class="row mb-4">
                             <div class="col-md-6">
-                                <label for="easeOfAccess">Ease of Access</label>
+                                <label for="easeOfAccess">Ease of access?</label>
                                 <select class="custom-select d-block w-100" id="easeOfAccess">
                                     <option value="">Select Rating</option>
                                     <option>Excellent</option>
@@ -66,18 +66,42 @@
                                     <option>Poor</option>
                                     <option>N/A</option>
                                 </select>
-                                <div class="invalid-feedback">Please choose a rating.</div>
+                                <div class="invalid-feedback">Please choose a rating</div>
                             </div>
                             <div class="col-md-6">
-                                <label for="interface">Interface</label>
+                                <label for="interface">How was the user interface?</label>
                                 <select class="custom-select d-block w-100" id="interface">
                                     <option value="">Select Rating</option>
-                                    <option>Excellent</option>
-                                    <option>Average</option>
-                                    <option>Poor</option>
-                                    <option>N/A</option>
+                                    <option>Easy to understand</option>
+                                    <option>Just Right</option>
+                                    <option>Difficult to navigate through</option>
                                 </select>
-                                <div class="invalid-feedback">Please choose a rating.</div>
+                                <div class="invalid-feedback">Please choose a rating</div>
+                            </div>
+                        </div>
+
+                        <div class="row mb-4">
+                            <div class="col-md-6">
+                                <label for="rateQuestions">How would you rate the questions?</label>
+                                <select class="custom-select d-block w-100" id="rateQuestions">
+                                    <option value="">Select Rating</option>
+                                    <option>Easy to solve</option>
+                                    <option>Just right</option>
+                                    <option>Difficult to solve</option>
+                                    <option>Difficult to decipher the questions</option>
+                                </select>
+                                <div class="invalid-feedback">Please choose a rating</div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="cluesHints">How would you rate the clues/hints?</label>
+                                <select class="custom-select d-block w-100" id="cluesHints">
+                                    <option value="">Select Rating</option>
+                                    <option>Easy to understand</option>
+                                    <option>Made the questions too easy</option>
+                                    <option>Just right</option>
+                                    <option>Did not help</option>
+                                </select>
+                                <div class="invalid-feedback">Please choose a rating</div>
                             </div>
                         </div>
                 
@@ -122,25 +146,35 @@
 
                         <div class="row mb-4">
                             <div class="col-md-12">
-                                <label for="organizers">Who were the organizers?</label>
-                                <input type="text" class="form-control" id="organizers" placeholder="Add Organizers">
+                                <label for="organizers">How supportive were the organizers?</label>
+                                <select class="custom-select d-block w-100" id="organizers">
+                                    <option value="">Select Rating</option>
+                                    <option>Very supportive</option>
+                                    <option>Just Right</option>
+                                    <option>Not at all</option>
+                                </select>
+                                <div class="invalid-feedback">Please choose a rating</div>
                             </div>
-                            <div class="invalid-feedback">Invalid</div>
                         </div>
 
                         <div class="row mb-4">
                             <div class="col-md-12">
-                                <label for="maintainers">Maintainers?</label>
-                                <input type="text" class="form-control" id="maintainers" placeholder="Add Maintainers">
+                                <label for="maintainers">How supportive were the maintainers?</label>
+                                <select class="custom-select d-block w-100" id="maintainers">
+                                    <option value="">Select Rating</option>
+                                    <option>Very supportive</option>
+                                    <option>Just Right</option>
+                                    <option>Not at all</option>
+                                </select>
                             </div>
-                            <div class="invalid-feedback">Invalid</div>
+                            <div class="invalid-feedback">Please choose a rating</div>
                         </div>
 
                         <div class="row mb-4">
                             <div class="col-md-12">
                                 <label for="overallExperience">How would you rate your overall experience?</label>
                                 <select class="custom-select d-block w-100" id="overallExperience">
-                                    <option value="">Select Overall Experience</option>
+                                    <option value="">Select Rating</option>
                                     <option>Excellent</option>
                                     <option>Average</option>
                                     <option>Poor</option>
@@ -152,8 +186,8 @@
                         </div>
                         <div class="row mb-3">
                             <div class="col-md-12 mb-3">
-                                <label for="additionComments">Any additional comments or questions?</label>
-                                <textarea type="text" rows="4" class="form-control" id="address2" placeholder="Comments"></textarea>
+                                <label for="additionComments">Any additional comments, questions or difficulties faced?</label>
+                                <textarea type="text" rows="5" class="form-control" id="address2" placeholder="Comments"></textarea>
                             </div>
                         </div>
                             
