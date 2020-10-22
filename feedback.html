@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Lakshya CTF</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap4-neon-glow.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel='stylesheet' href='//cdn.jsdelivr.net/font-hack/2.020/css/hack.min.css'>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="imgloaded">
+    
+    <div class="main">
+        <div class="glitch">
+            <div style="position: fixed;" class="glitch__img"></div>
+            <div style="position: fixed;" class="glitch__img"></div>
+            <div style="position: fixed;" class="glitch__img"></div>
+            <div style="position: fixed;" class="glitch__img"></div>
+            <div style="position: fixed;" class="glitch__img"></div>
+        </div>
+    </div>
+    <div class="navbar-dark text-white">
+        <div class="container">
+            <nav class="navbar px-0 navbar-expand-lg navbar-dark">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a href="index.html" class="pl-md-0 p-3 text-decoration-none text-light">
+                            <h3 class="bold"><span class="color_danger">LAKSHYA</span><span class="color_white">CTF</span></h3>
+                        </a>
+                    </div>
+                    <div class="navbar-nav ml-auto">
+                        <a href="index.html" class="p-3 text-decoration-none text-white bold">Home</a>
+                        <a href="about.html" class="p-3 text-decoration-none text-light bold">About</a>
+                        <a href="hackerboard.html" class="p-3 text-decoration-none text-light bold">Hackerboard</a>
+                        <a href="login.html" class="p-3 text-decoration-none text-light bold">Login</a>
+                        <a href="register.html" class="p-3 text-decoration-none text-light bold">Register</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="jumbotron bg-transparent mb-0 pt-3 radius-0">
+        <div class="container">
+            <div class="row hackerFont">
+                <div class="col-xl-8">
+                    <h1 class="display-1 bold color_white content__title mb-4">FEEDBACK<span class="vim-caret">&nbsp;</span></h1>
+                    <p class="text-grey text-spacey hackerFont lead mb-4">
+                        Tell us about your experience!
+                    </p>
+                    <form class="needs-validation" novalidate>
+                        <div class="row mb-4">
+                            <div class="col-md-6">
+                                <label for="easeOfAccess">Ease of access?</label>
+                                <select class="custom-select d-block w-100" id="easeOfAccess">
+                                    <option value="">Select Rating</option>
+                                    <option>Excellent</option>
+                                    <option>Average</option>
+                                    <option>Poor</option>
+                                    <option>N/A</option>
+                                </select>
+                                <div class="invalid-feedback">Please choose a rating</div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="interface">How was the user interface?</label>
+                                <select class="custom-select d-block w-100" id="interface">
+                                    <option value="">Select Rating</option>
+                                    <option>Easy to understand</option>
+                                    <option>Just Right</option>
+                                    <option>Difficult to navigate through</option>
+                                </select>
+                                <div class="invalid-feedback">Please choose a rating</div>
+                            </div>
+                        </div>
+
+                        <div class="row mb-4">
+                            <div class="col-md-6">
+                                <label for="rateQuestions">How would you rate the questions?</label>
+                                <select class="custom-select d-block w-100" id="rateQuestions">
+                                    <option value="">Select Rating</option>
+                                    <option>Easy to solve</option>
+                                    <option>Just right</option>
+                                    <option>Difficult to solve</option>
+                                    <option>Difficult to decipher the questions</option>
+                                </select>
+                                <div class="invalid-feedback">Please choose a rating</div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="cluesHints">How would you rate the clues/hints?</label>
+                                <select class="custom-select d-block w-100" id="cluesHints">
+                                    <option value="">Select Rating</option>
+                                    <option>Easy to understand</option>
+                                    <option>Made the questions too easy</option>
+                                    <option>Just right</option>
+                                    <option>Did not help</option>
+                                </select>
+                                <div class="invalid-feedback">Please choose a rating</div>
+                            </div>
+                        </div>
+                
+                        <div class="row mb-4">
+                            <div class="col-md-6">Did you enjoy your experience?</div>
+                            <div class="col-md-6">
+                                <div class="btn-group w-100" role="group" aria-label="Did you enjoy your experience?">
+                                    <input type="radio" id="experience-yes" name="experience" class="toggle">
+                                    <label for="experience-yes" class="btn btn-outline-primary toggle-yes">Yes</label>
+                                    <input type="radio" id="experience-no" name="experience" class="toggle">
+                                    <label for="experience-no" class="btn btn-outline-primary toggle-no">No</label>
+                                </div>
+                                <div class="invalid-feedback">Please select Yes/No</div>
+                            </div>
+                        </div>
+                            
+                        <div class="row mb-4">
+                            <div class="col-md-6">Would you play again?</div>
+                            <div class="col-md-6">
+                                <div class="btn-group w-100" role="group" aria-label="Would you play again?">
+                                    <input type="radio" id="playAgain-yes" name="playAgain" class="toggle">
+                                    <label for="playAgain-yes" class="btn btn-outline-primary toggle-yes">Yes</label>
+                                    <input type="radio" id="playAgain-no" name="playAgain" class="toggle">
+                                    <label for="playAgain-no" class="btn btn-outline-primary toggle-no">No</label>
+                                </div>
+                                <div class="invalid-feedback">Please select Yes/No</div>
+                            </div>
+                        </div>
+                
+                        <div class="row mb-4">
+                            <div class="col-md-6">Would you recommend to others?</div>
+                            <div class="col-md-6">
+                                <div class="btn-group w-100"  role="group" aria-label="Would you recommend to others?">
+                                    <input type="radio" id="recommend-yes" name="recommend" class="toggle">
+                                    <label for="recommend-yes" class="btn btn-outline-primary toggle-yes">Yes</label>
+                                    <input type="radio" id="recommend-no" name="recommend" class="toggle">
+                                    <label for="recommend-no" class="btn btn-outline-primary toggle-no">No</label>
+                                </div>
+                                <div class="invalid-feedback">Please select Yes/No</div>
+                            </div>
+                        </div>
+
+                        <div class="row mb-4">
+                            <div class="col-md-12">
+                                <label for="organizers">How supportive were the organizers?</label>
+                                <select class="custom-select d-block w-100" id="organizers">
+                                    <option value="">Select Rating</option>
+                                    <option>Very supportive</option>
+                                    <option>Just Right</option>
+                                    <option>Not at all</option>
+                                </select>
+                                <div class="invalid-feedback">Please choose a rating</div>
+                            </div>
+                        </div>
+
+                        <div class="row mb-4">
+                            <div class="col-md-12">
+                                <label for="maintainers">How supportive were the maintainers?</label>
+                                <select class="custom-select d-block w-100" id="maintainers">
+                                    <option value="">Select Rating</option>
+                                    <option>Very supportive</option>
+                                    <option>Just Right</option>
+                                    <option>Not at all</option>
+                                </select>
+                            </div>
+                            <div class="invalid-feedback">Please choose a rating</div>
+                        </div>
+
+                        <div class="row mb-4">
+                            <div class="col-md-12">
+                                <label for="overallExperience">How would you rate your overall experience?</label>
+                                <select class="custom-select d-block w-100" id="overallExperience">
+                                    <option value="">Select Rating</option>
+                                    <option>Excellent</option>
+                                    <option>Average</option>
+                                    <option>Poor</option>
+                                    <option>N/A</option>
+                                </select>
+                                <div class="invalid-feedback">Please choose a rating</div>
+                            </div>
+                    
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-md-12 mb-3">
+                                <label for="additionComments">Did you face any difficulties, or do you have any additional comments or questions?</label>
+                                <textarea type="text" rows="5" class="form-control" id="address2" placeholder="Comments"></textarea>
+                            </div>
+                        </div>
+                            
+
+                            <!-- <hr class="mb-4"> -->
+                        
+                        <button class="btn btn-outline-danger btn-shadow px-3 my-2 ml-0 ml-sm-1 text-left typewriter" type="submit">
+                            <h4>Submit</h4>
+                        </button>
+                    </div>
+                        
+                
+                        
+                        
+                        
+                    </form>
+                </div>
+            </div>
+            </div>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
