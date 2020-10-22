@@ -8,6 +8,7 @@ CTF-Website-Template-2020 is a frontend template made for a simple CTF event. Yo
 - Register Page
 - Challenge / Quests Page
 - 404 Not Found Page
+- Feeback Page
 - Leaderboard Page
 - About / Rules Page
 - Instructions Page
