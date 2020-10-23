@@ -148,28 +148,22 @@ function setCookie(cname,cvalue,exdays) {
   var expires = "expires=" + d.toGMTString();
   document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
-function getCookie(cname) {
-  var name = cname + "=";
-  var decodedCookie = decodeURIComponent(document.cookie);
-  var ca = decodedCookie.split(';');
-  for(var i = 0; i < ca.length; i++) {
-    var c = ca[i];
-    while (c.charAt(0) == ' ') {
-      c = c.substring(1);
-    }
-    if (c.indexOf(name) == 0) {
-      return c.substring(name.length, c.length);
-    }
-  }
-  return "";
+
+//below meathod reference https://stackoverflow.com/questions/5639346/what-is-the-shortest-function-for-reading-a-cookie-by-name-in-javascript/25490531#25490531
+function getCookie(a) {
+  var b = document.cookie.match('(^|;)\\s*' + a + '\\s*=\\s*([^;]+)');
+  return b ? b.pop() : '';
 }
+
 function checkCookie() {
-  var user=getCookie("LAKSHYA#CTF#INC#2020");
-  if (user != "") {    
-    createLog("ok");
-  } else {
+  var user=getCookie("visited"); 
+  if (user == 1) {   
+    setCookie("visited", 1, 30); //this will update the cookie      
+    jQuery("#main").fadeIn("slow"); 
+  } else {  
     addLog();      
-    setCookie("LAKSHYA#CTF#INC#2020", "LAKSHYA#CTF#INC#2020", 30);       
+    setCookie("visited", 1, 30);   
+
   }
 }
 
